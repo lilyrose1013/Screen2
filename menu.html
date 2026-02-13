@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipping Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center-section">
+        <h2 class="total-heading">Total</h2>
+        <p class="total-amount">$0.00</p>
+        <ul class="receipt-list"></ul>
+        <h2 class="tip-heading">TIP</h2>
+        <p class="tip-subtext">Your Server Will Be Paid This Much</p>
+        <div class="tip-buttons">
+            <button class="tip-btn" data-tip="0.10">10%<br><span class="tip-value">$0.00</span></button>
+            <button class="tip-btn" data-tip="0.15">15%<br><span class="tip-value">$0.00</span></button>
+            <button class="tip-btn" data-tip="0.20">20%<br><span class="tip-value">$0.00</span></button>
+        </div>
+        <button class="no-tip-btn">No Tip</button>
+        <button class="pay-btn">Pay</button>
+    </div>
+    <div class="menu-box">
+        <p class="menu-label">Menu</p>
+        <div class="menu-grid">
+            <button class="menu-cell" data-price="3.95">Ice Coffee<br>$3.95</button>
+            <button class="menu-cell" data-price="3.85">Drip Coffee<br>$3.85</button>
+            <button class="menu-cell" data-price="4.45">Whole Milk<br>$4.45</button>
+            <button class="menu-cell" data-price="0.25">Oat Milk<br>$0.25</button>
+            <button class="menu-cell" data-price="0.80">Sugar Syrup<br>$0.80</button>
+            <button class="menu-cell" data-price="0.80">Caramel Syrup<br>$0.80</button>
+            <button class="menu-cell" data-price="1.55">Cold Foam<br>$1.55</button>
+            <button class="menu-cell" data-price="1.00">Lactose Free<br>$1.00</button>
+        </div>
+
+
+    </div>
+    <img src="coffee.png" alt="Coffee" class="coffee-small">
+    <button class="reset-btn" onclick="location.reload()">Reset</button>
+    <script src="calc.js"></script>
+</body>
+</html>

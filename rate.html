@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Tipping Experience</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="pay-page">
+    <header class="pay-header">
+      <p>Total Payment</p>
+      <div id="totalPayment"></div>
+      <img src="coffee.png" alt="Coffee logo" class="pay-logo" />
+    </header>
+
+    <main class="pay-main">
+      <section id="rate">
+        <div id="rateText">How much were you satisfied with this experience?</div>
+        <div>
+        <input type="radio" id="rate0" name="satisfaction" value="0" />
+        <label for="rate0">unsatisfied</label>
+
+        <input type="radio" id="rate1" name="satisfaction" value="1" />
+        <label for="rate1">little unsatisfied</label>
+
+        <input type="radio" id="rate2" name="satisfaction" value="2" />
+        <label for="rate2">moderate</label>
+
+        <input type="radio" id="rate3" name="satisfaction" value="3" />
+        <label for="rate3">satisfied</label>
+
+        <input type="radio" id="rate4" name="satisfaction" value="4" />
+        <label for="rate4">very satisfied</label>
+      </div>
+      </section>
+
+      <div class="pay-actions">
+        <button id="payReset">Reset</button>
+        <button id="downloadJson">Complete order</button>
+      </div>
+    </main>
+
+    <script src="calc.js"></script>
+    <script src="K.js"></script>
+  </body>
+</html>

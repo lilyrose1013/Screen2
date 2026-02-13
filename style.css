@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SoDoSans';
+    src: url('SoDoSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background-color: #dee2cd;
+    font-family: 'SoDoSans', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.pay-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 30px;
+    background-color: #dee2cd;
+}
+
+.pay-header {
+    margin-bottom: 20px;
+}
+
+.pay-header p {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #362415;
+}
+.pay-logo {
+    width: 110px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.pay-logo {
+    width: 110px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.pay-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#totalPayment {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #6b4a2f;
+}
+
+#rate {
+    font-size: 1.25rem;
+}
+
+#rateText {
+    margin: 0 0 20px 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #362415;
+}
+
+label {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #6b4a2f;
+}
+
+input[type="radio"] {
+    accent-color: #ebbc66;
+}
+
+.pay-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay-actions button {
+    font-family: 'SoDoSans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+.coffee-small {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: auto;
+}
+
+.min-wage-heading {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.wage-amount {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.tipping-wage-heading {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.tipping-wage-amount {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.center-section {
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    text-align: center;
+}
+
+.total-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #362415;
+}
+
+.total-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6b4a2f;
+    margin-top: 5px;
+}
+
+.receipt-list {
+    list-style: none;
+    font-size: 1.3rem;
+    text-align: left;
+    border-top: 2px dashed black;
+    padding-top: 10px;
+    margin-top: 10px;
+    min-width: 280px;
+    color: #362415;
+}
+
+.receipt-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.receipt-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'SoDoSans', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    color: darkred;
+}
+
+.tip-heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #362415;
+    margin-top: 20px;
+}
+
+.tip-subtext {
+    color: #6b4a2f;
+}
+
+button {
+    font-size: 1.25rem;
+    padding: 12px 36px;
+    border: 2px solid #000;
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.pay-page .pay-actions button {
+    background-color: #00754a;
+    color: #ebbc66;
+    border-color: #00754a;
+}
+
+.tip-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tip-btn {
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: 'SoDoSans', Arial, sans-serif;
+    border: 2px solid #00754a;
+    background-color: #00754a;
+    color: #ebbc66;
+    cursor: pointer;
+    min-width: 110px;
+}
+
+.tip-value {
+    font-size: 1.2rem;
+    font-family: 'SoDoSans', Arial, sans-serif;
+    display: block;
+    margin-top: 4px;
+}
+
+.no-tip-btn {
+    display: block;
+    margin: 10px auto 0;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: 'SoDoSans', Arial, sans-serif;
+    border: 2px solid #ebbc66;
+    background-color: #ebbc66;
+    color: #00754a;
+    cursor: pointer;
+}
+
+.pay-btn {
+    display: block;
+    margin: 15px auto 0;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: 'SoDoSans', Arial, sans-serif;
+    border: 2px solid #00754a;
+    background-color: #00754a;
+    color: #ebbc66;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background-color: #00754a;
+    color: #ebbc66;
+}
+
+.reset-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 2px solid #ebbc66;
+    background-color: #ebbc66;
+    color: #00754a;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #ebbc66;
+    color: #00754a;
+}
+
+.menu-box {
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    cursor: pointer;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.menu-cell {
+    width: 140px;
+    height: 140px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: 'SoDoSans', Arial, sans-serif;
+    padding: 8px;
+    background-color: #0b8c5d;
+    color: #c0e1c2;
+    cursor: pointer;
+}
+
+.menu-label {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #362415;
+}
