@@ -1,11 +1,8 @@
 let total = 0;
-let currentTipPercent = 0;
 
 const totalDisplay = document.querySelector('.total-amount');
 const receiptList = document.querySelector('.receipt-list');
-const tipDisplay = document.querySelector('.tip-amount');
 const buttons = document.querySelectorAll('.menu-cell');
-const payTotalDisplay = document.getElementById('totalPayment');
 
 function updateTip() {
     tipButtons.forEach(btn => {
@@ -107,19 +104,3 @@ if (payBtn) {
     });
 }
 
-// On the payment page, show the stored total and wire up Reset
-if (document.body.classList.contains('pay-page')) {
-    const storedTotal = localStorage.getItem('totalAmount');
-    if (storedTotal !== null && payTotalDisplay) {
-        const numericTotal = parseFloat(storedTotal) || 0;
-        payTotalDisplay.textContent = '$' + numericTotal.toFixed(2);
-    }
-
-    const payResetBtn = document.getElementById('payReset');
-    if (payResetBtn) {
-        payResetBtn.addEventListener('click', () => {
-            localStorage.removeItem('totalAmount');
-            window.location.href = 'menu.html';
-        });
-    }
-}

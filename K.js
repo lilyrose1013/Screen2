@@ -10,6 +10,14 @@ if (savedPayment !== null && totalPayment && !totalPayment.textContent.trim()) {
   totalPayment.textContent = "$" + numericTotal.toFixed(2);
 }
 
+const payResetBtn = document.getElementById("payReset");
+if (payResetBtn) {
+  payResetBtn.addEventListener("click", () => {
+    localStorage.removeItem("totalAmount");
+    window.location.href = "menu.html";
+  });
+}
+
 ratingInputs.forEach((radio) => {
   radio.addEventListener("change", (e) => {
     const selectedValue = e.target.value;
