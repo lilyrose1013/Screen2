@@ -31,6 +31,50 @@ body {
     margin-bottom: 20px;
 }
 
+.total-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-top: -50px;
+}
+
+.total-center {
+    min-width: 220px;
+}
+
+.total-side {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.rate-pic {
+    width: 112px;
+    height: auto;
+}
+
+.milk-pic {
+    width: 88px;
+}
+
+.milk-lower {
+    margin-top: 14px;
+}
+
+.smallcup-lower {
+    margin-top: 54px;
+}
+
+.right-pic-bigger {
+    width: 98px;
+}
+
+.coldbrew-bigger {
+    width: 126px;
+}
+
 .pay-header p {
     font-size: 2rem;
     font-weight: 900;
